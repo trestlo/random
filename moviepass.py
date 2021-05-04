@@ -1,6 +1,8 @@
 ### This automation would open support tickets at MoviePass since they began ignoring requests and continued to charge
 ### people's accounts while they attempted to figure out how to stop losing money.
 
+### Note: They didn't figure it out. RIP Moviepass
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -45,7 +47,7 @@ action.perform()
 
 # Fill in the details
 driver.find_element_by_id("request_subject").send_keys("Link in gift activation email does not work")
-driver.find_element_by_id("request_description").send_keys("I received and email about receiving a gift of Moviepass. A couple of weeks later I received the card, but when I click on the link in the email to claim my gift I get a page that says: \'Please Fix the following errors. Your Gift Wasn't Found. Please Contact Customer Service.\' After two months of attempting to contact you (while my friend still gets charged every month), I have still not received a resolution. Just to go over the details: I have the card, I don't have a working moviepass account. Resetting my password just leads to another invalid credentials email. Please take a look at this issue.")
+driver.find_element_by_id("request_description").send_keys("Please respond to one of our hundreds of support tickets. We are unable to activate our cards due to the dead links sent in emails.")
 
 # This opens the case
 driver.find_element_by_name("commit").click()
