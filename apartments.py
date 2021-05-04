@@ -42,9 +42,9 @@ def sendemail(from_addr, to_addr_list, cc_addr_list,
     return problems
 
 sendemail(from_addr    = 'aurpineiro@gmail.com', 
-          to_addr_list = ['leo.pineiro@outlook.com', 'alex.falten@ccsg9.navy.mil'],
+          to_addr_list = ['leo.pineiro@outlook.com'],
           cc_addr_list = [], 
           subject      = 'Apartment Prices', 
           message      = body, 
           login        = 'aurpineiro', 
-          password     = 'PASSWORD')
+          password     = '')
